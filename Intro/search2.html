@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Messenger
+        </title>
+        <style>
+            .cat-img{
+                width: 60px;
+                height: 60px;
+                border-radius: 500px;
+                object-fit: cover;
+            }
+            .input-text{
+                border:none;
+                position: relative;
+                top: -20px;
+                margin-left: 10px;
+            }
+            .input-text:focus{
+                outline: none;
+            }
+            .tweet-button{
+            background-color: rgb(42, 132, 250);
+            border: none;
+            height: 36px;
+            width: 110px;
+            border-radius: 20px;
+            color: aliceblue;
+            font-weight: 800;
+            cursor: pointer;
+            margin-right: 8px;
+            margin-left: 30px;
+            position: relative;
+            top: -20px;
+            letter-spacing: 1px;
+            transition: box-shadow 0.15s,opacity 0.15s,color 0.15s;
+            }
+            
+            .tweet-button:hover{
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+            }
+            .tweet-button:active{
+                opacity: 0.4;
+            }
+        </style>
+    </head>
+    <body>
+        <img class="cat-img" src="pexels-photo-2071882.jpeg">
+        <input class="input-text" type="text" placeholder="What's happening? ">
+        <button class="tweet-button">
+            Tweet
+          </button>
+    </body>
+</html>

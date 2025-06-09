@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <style>
+      .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgba(134, 64, 199, 0.801);
+        height: 40px;
+        align-items: center;
+      }
+      .left{
+        margin-left: 10px;
+        color: aliceblue;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 400;
+      }
+      .search-bar{
+        border-radius: 20px;
+        border: none;
+        width: 500px;
+        padding-left: 25px;
+      }
+      .search-bar:focus{
+        outline: none;
+      }
+      button{
+        border-color: aliceblue;
+        border-width: 1.5px;
+        background-color: transparent;
+        border-style: solid;
+        border-radius: 5px;
+        color: aliceblue;
+        cursor: pointer;
+        height: 26px;
+        transition: opacity 0.15s;        
+      }
+      button:hover{
+        opacity: 0.8;
+      }
+      .right{
+        margin-right: 10px;
+      }
+    </style>
+    <div class="header">
+      <div class="left">Home</div>
+      <div class="middle">
+        <input class="search-bar" type="text" placeholder="Search" >
+      </div>
+      <div class="right">
+        <button>Download</button> 
+      </div>
+    </div>
+  </body>
+</html>
